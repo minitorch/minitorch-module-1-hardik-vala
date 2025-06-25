@@ -122,14 +122,14 @@ if __name__ == "__main__":
     # data = minitorch.datasets["Diag"](PTS)
     # ScalarTrain(HIDDEN).train(data, RATE)
 
-    PTS = 50
-    HIDDEN = 5
-    RATE = 0.5
-    data = minitorch.datasets["Split"](PTS)
-    ScalarTrain(HIDDEN).train(data, RATE)
-
     # PTS = 50
-    # HIDDEN = 4
+    # HIDDEN = 5
     # RATE = 0.5
     # data = minitorch.datasets["Split"](PTS)
     # ScalarTrain(HIDDEN).train(data, RATE)
+
+    PTS = 50
+    HIDDEN = 10
+    RATE = 0.5
+    data = minitorch.datasets["Xor"](PTS)
+    ScalarTrain(HIDDEN).train(data, RATE)
